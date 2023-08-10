@@ -49,3 +49,10 @@ kubectl apply -f role-arca.yaml -f rolebinding-arca.yaml
 
 # Create git repo 
 https://github.com/VladimirKogan/dot-net-test-app
+
+
+# Jenkins Create Job
+Create Job type pipeline
+
+Instead jenkins pipleline choose
+Pipeline script from SCM and connect to https://github.com/VladimirKogan/dot-net-test-app.git
