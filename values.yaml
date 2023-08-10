@@ -1,0 +1,15 @@
+controller:
+  image: "vladimirkogan/jenkins-dotnet"
+  tag: "k8sdoc_v1"
+  installPlugins:
+  - kubernetes:3937.vd7b_82db_e347b_
+  - workflow-aggregator:596.v8c21c963d92d
+  - git:5.1.0
+  - dotnet-sdk:1.4.0
+  - docker-plugin:1.4
+  - docker-build-step:2.9
+agent:
+  volumes:
+    - type: HostPath
+      hostPath: /var/run/docker.sock
+      mountPath: /var/run/docker.sock
